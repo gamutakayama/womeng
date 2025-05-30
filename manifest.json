@@ -1,7 +1,6 @@
 {
-  "name": "我梦",
   "short_name": "我梦",
-  "description": "曾闻世有卢生梦，我梦卢生即此身。今古谁醒复谁梦，吕翁同作梦中人。",
+  "name": "我梦",
   "icons": [
     {
       "src": "/images/manifest-icon-192.maskable.png",
@@ -28,6 +27,9 @@
       "purpose": "maskable"
     }
   ],
+  "id": "/",
   "start_url": "/",
-  "display": "standalone"
+  "display": "standalone",
+  "scope": "/",
+  "description": "曾闻世有卢生梦，我梦卢生即此身。今古谁醒复谁梦，吕翁同作梦中人。"
 }
