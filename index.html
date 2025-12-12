@@ -14,10 +14,6 @@
       content="#181818"
       media="(prefers-color-scheme: dark)"
     />
-    <meta
-      name="description"
-      content="曾闻世有卢生梦，我梦卢生即此身。今古谁醒复谁梦，吕翁同作梦中人。"
-    />
     <meta name="keywords" content="我梦, womeng" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
@@ -410,6 +406,7 @@
         --bg-color: #ffffff;
         --bg-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MiIgaGVpZ2h0PSI0NCIgdmlld0JveD0iMCAwIDQyIDQ0Ij48cGF0aCBkPSJNMCAwaDQydjQ0SDB6bTEgMWg0MHYyMEgxek0wIDIzaDIwdjIwSDB6bTIyIDBoMjB2MjBIMjJ6IiBmaWxsPSIjZmFmYWZhIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=");
         --fg-color: #333333;
+        --link-bg-color-active: #007fff4d;
         --link-bg-color-hover: #007fff33;
         --link-border-color: #d3d3d3;
         --link-fg-color: #3d3d3d;
@@ -423,6 +420,7 @@
           --bg-color: #181818;
           --bg-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MiIgaGVpZ2h0PSI0NCIgdmlld0JveD0iMCAwIDQyIDQ0Ij48cGF0aCBkPSJNMCAwaDQydjQ0SDB6bTEgMWg0MHYyMEgxek0wIDIzaDIwdjIwSDB6bTIyIDBoMjB2MjBIMjJ6IiBmaWxsPSIjMWQxZDFkIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=");
           --fg-color: #d3d3d3;
+          --link-bg-color-active: #0066cc4d;
           --link-bg-color-hover: #0066cc33;
           --link-border-color: #333333;
           --link-fg-color: #c9c9c9;
@@ -486,16 +484,6 @@
         margin: 0;
       }
 
-      .description {
-        font-size: inherit;
-        font-weight: inherit;
-        margin: 0;
-      }
-
-      .description p {
-        margin: 0;
-      }
-
       .links {
         width: 100%;
       }
@@ -521,6 +509,12 @@
 
       .link:hover {
         background-color: var(--link-bg-color-hover);
+        border-color: var(--primary-color);
+        color: var(--link-fg-color-hover);
+      }
+
+      .link:active {
+        background-color: var(--link-bg-color-active);
         border-color: var(--primary-color);
         color: var(--link-fg-color-hover);
       }
@@ -657,10 +651,6 @@
     <main>
       <img alt="梦" height="80" loading="lazy" src="/images/favicon.svg" />
       <h1 class="title">我梦</h1>
-      <h2 class="description">
-        <p>曾闻世有卢生梦，我梦卢生即此身。</p>
-        <p>今古谁醒复谁梦，吕翁同作梦中人。</p>
-      </h2>
       <section class="links">
         <a class="link" href="https://notep.ad" rel="noopener" target="_blank">
           <img
